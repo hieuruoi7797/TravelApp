@@ -7,10 +7,6 @@ import android.widget.TextView;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created by sonng266 on 13/12/2017.
- */
-
 public final class FontManager {
     private Map<String, Typeface> mFonts = new HashMap<>();
 

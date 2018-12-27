@@ -22,10 +22,6 @@ import org.greenrobot.eventbus.ThreadMode;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-/**
- * Created by sonng266 on 25/11/2017.
- */
-
 public abstract class BaseSearchActivity extends AppCompatActivity{
     private static final String TAG = "BaseSearchActivity";
 

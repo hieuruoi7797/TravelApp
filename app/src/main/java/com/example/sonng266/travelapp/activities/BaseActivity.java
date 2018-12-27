@@ -16,10 +16,6 @@ import org.greenrobot.eventbus.ThreadMode;
 
 import butterknife.ButterKnife;
 
-/**
- * Created by sonng266 on 15/11/2017.
- */
-
 public abstract class BaseActivity extends AppCompatActivity implements FragmentManager.OnBackStackChangedListener {
 
     protected abstract void onInitializeActivity(@Nullable Bundle savedInstanceState);

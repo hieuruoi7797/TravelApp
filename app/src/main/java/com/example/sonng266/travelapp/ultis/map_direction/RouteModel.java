@@ -4,10 +4,6 @@ import com.google.android.gms.maps.model.LatLng;
 
 import java.util.List;
 
-/**
- * Created by qklahpita on 11/26/17.
- */
-
 public class RouteModel {
     public String distance;
     public String duration;

@@ -12,10 +12,6 @@ import com.google.firebase.messaging.RemoteMessage;
 
 import org.greenrobot.eventbus.EventBus;
 
-/**
- * Created by sonng266 on 13/12/2017.
- */
-
 public class NotificationFirebaseService extends FirebaseMessagingService {
     private static final String TAG = "Amen";
 

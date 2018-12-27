@@ -3,10 +3,6 @@ package com.example.sonng266.travelapp.models;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by sonng266 on 25/11/2017.
- */
-
 public class UserModel {
 
     public LocationModel location;

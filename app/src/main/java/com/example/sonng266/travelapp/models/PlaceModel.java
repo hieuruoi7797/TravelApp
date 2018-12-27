@@ -1,9 +1,5 @@
 package com.example.sonng266.travelapp.models;
 
-/**
- * Created by sonng266 on 26/11/2017.
- */
-
 public class PlaceModel {
     public LocationModel location;
     public String name;

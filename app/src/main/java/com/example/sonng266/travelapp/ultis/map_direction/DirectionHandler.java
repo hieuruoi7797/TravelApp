@@ -8,10 +8,6 @@ import com.google.android.gms.maps.model.LatLngBounds;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by qklahpita on 11/26/17.
- */
-
 public class DirectionHandler {
     public static LatLng fake1 = new LatLng(21.022205735362007, 105.81567924519466);
     public static LatLng fake2 = new LatLng(21.02066019886197, 105.81452103142932);

@@ -3,10 +3,6 @@ package com.example.sonng266.travelapp.widgets;
 import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
 
-/**
- * Created by sonng266 on 16/11/2017.
- */
-
 public class ActionBarView {
     private Toolbar toolbar;
     private TextView title;

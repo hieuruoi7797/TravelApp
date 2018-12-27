@@ -9,10 +9,6 @@ import java.util.List;
 
 import io.realm.Realm;
 
-/**
- * Created by cuonghx on 11/27/2017.
- */
-
 public class Utils {
     private static Realm realm = Realm.getDefaultInstance();;
 

@@ -3,11 +3,6 @@ package com.example.sonng266.travelapp.ultis.firebase;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-
-/**
- * Created by sonng266 on 26/11/2017.
- */
-
 public class DatabaseFirebase {
 
     private static final String TAG = "DatabaseFirebase";

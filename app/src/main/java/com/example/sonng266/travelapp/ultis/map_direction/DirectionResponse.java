@@ -2,10 +2,6 @@ package com.example.sonng266.travelapp.ultis.map_direction;
 
 import java.util.List;
 
-/**
- * Created by qklahpita on 11/26/17.
- */
-
 public class DirectionResponse {
     public List<RouteJSON> routes;
     public String status;

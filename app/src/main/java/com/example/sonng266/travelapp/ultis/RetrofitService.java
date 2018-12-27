@@ -12,10 +12,6 @@ import retrofit2.http.Headers;
 import retrofit2.http.POST;
 import retrofit2.http.Query;
 
-/**
- * Created by qklahpita on 11/26/17.
- */
-
 public interface RetrofitService {
     @GET("json")
     Call<DirectionResponse> getDirection(@Query("origin") String origin,

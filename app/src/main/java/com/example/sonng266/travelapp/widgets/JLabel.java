@@ -8,10 +8,6 @@ import android.util.AttributeSet;
 import com.example.sonng266.travelapp.R;
 import com.example.sonng266.travelapp.ultis.FontManager;
 
-/**
- * Created by sonng266 on 13/12/2017.
- */
-
 public class JLabel extends AppCompatTextView {
     public JLabel(Context context) {
         super(context);

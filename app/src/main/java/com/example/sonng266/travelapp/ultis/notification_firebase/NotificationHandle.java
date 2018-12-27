@@ -10,10 +10,6 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-/**
- * Created by sonng266 on 15/12/2017.
- */
-
 public class NotificationHandle {
     public static void sendingNotification(SendingNotificationModel sendingNotificationModel, final Activity activity) {
         RetrofitService retrofitService = RetrofitInstance.getInstanceNotificationFirebase().create(RetrofitService.class);

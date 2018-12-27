@@ -14,9 +14,6 @@ import android.widget.Button;
 
 import com.example.sonng266.travelapp.R;
 
-/**
- * Created by sonng266 on 13/12/2017.
- */
 
 public class DialogNotification extends Dialog implements View.OnClickListener {
 

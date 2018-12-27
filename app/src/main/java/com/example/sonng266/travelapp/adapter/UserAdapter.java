@@ -20,9 +20,6 @@ import java.util.List;
 
 import jp.wasabeef.picasso.transformations.CropCircleTransformation;
 
-/**
- * Created by cuonghx on 12/11/2017.
- */
 
 public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserHolder>{
 

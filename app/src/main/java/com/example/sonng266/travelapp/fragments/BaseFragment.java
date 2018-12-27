@@ -15,10 +15,6 @@ import com.example.sonng266.travelapp.widgets.ActionBarView;
 
 import butterknife.ButterKnife;
 
-/**
- * Created by sonng266 on 16/11/2017.
- */
-
 public abstract class BaseFragment extends Fragment {
     public abstract String getPageTitle();
 

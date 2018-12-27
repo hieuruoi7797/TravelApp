@@ -1,5 +1,6 @@
 package com.example.sonng266.travelapp.widgets;
 
+
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.support.v7.widget.AppCompatButton;
@@ -7,10 +8,6 @@ import android.util.AttributeSet;
 
 import com.example.sonng266.travelapp.R;
 import com.example.sonng266.travelapp.ultis.FontManager;
-
-/**
- * Created by sonng266 on 13/12/2017.
- */
 
 public class JButton extends AppCompatButton {
     public JButton(Context context) {
