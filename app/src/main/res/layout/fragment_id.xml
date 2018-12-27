@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.sonng266.travelapp.fragments.account.EditProfileFragment"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <include
+        android:id="@+id/logo"
+        layout="@layout/logo"/>
+
+    <ImageView
+        android:src="@drawable/ic_person_black_24dp"
+        android:id="@+id/iv_profile_id"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/margin_login"
+        android:layout_height="@dimen/margin_login" />
+    <TextView
+        android:layout_marginBottom="@dimen/marginid"
+        android:id="@+id/tv_username_id"
+        android:textStyle="bold"
+        android:text="UserName"
+        android:layout_below="@id/iv_profile_id"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/tv_tile"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/til_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đã có ID chuyến đi của bạn ?"/>
+
+    <ImageView
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_check_id"
+        android:src="@drawable/ic_check_circle_black_24dp"
+        android:layout_below="@id/tv_tile"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_alignParentRight="true"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_below="@id/tv_username_id"
+        android:id="@+id/til_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:singleLine="true">
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/edt_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập ID chuyến đi của bạn"
+            android:maxLines="1" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_continue_id"
+        android:textStyle="bold"
+        android:textColor="@color/textolor"
+        android:layout_marginTop="@dimen/margin_login"
+        android:textSize="@dimen/textsizel"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/til_id"
+        android:background="@color/colorbackgrond"
+        android:text="Tiếp tục"
+        android:layout_width="@dimen/width_login"
+        android:layout_height="@dimen/height_login" />
+    <TextView
+        android:gravity="bottom"
+        android:includeFontPadding="false"
+        android:id="@+id/tv_create_id"
+        android:textStyle="bold"
+        android:layout_below="@id/tv_continue_id"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Khởi tạo một ID chuyến đi?"/>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:layout_centerInParent="true"
+        android:id="@+id/avi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AVLoadingIndicatorView"
+        android:visibility="visible"
+        app:indicatorName="BallSpinFadeLoaderIndicator"
+        app:indicatorColor="@color/colorbackgrond" />
+
+</RelativeLayout>

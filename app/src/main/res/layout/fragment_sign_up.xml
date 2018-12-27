@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    tools:context="com.example.sonng266.travelapp.fragments.account.SignUpFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:layout_width="@dimen/width_logo"
+        android:layout_height="wrap_content"
+        android:src="@drawable/testlogo"/>
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/iv_check_userName"
+        android:layout_margin="16dp"
+        android:layout_below="@id/iv_logo"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_check_circle_black_24dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="@dimen/margin_login"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_below="@id/iv_logo"
+        android:id="@+id/til_username_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:singleLine="true">
+        <EditText
+            android:lines="1"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:nextFocusForward="@id/edt_email_sign_up"
+            android:id="@+id/edt_username_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên đăng nhập"
+            android:maxLines="1" />
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/iv_check_mail"
+        android:layout_margin="16dp"
+        android:layout_below="@id/til_username_sign_up"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_check_circle_black_24dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_below="@id/til_username_sign_up"
+        android:id="@+id/til_email_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:singleLine="true"
+        android:imeOptions="actionNext">
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_mk"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mật khẩu ít nhất 6 kí tự"/>
+
+        <EditText
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:nextFocusForward="@id/edt_password_sign_up"
+            android:id="@+id/edt_email_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:maxLines="1" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/iv_check_pass"
+        android:layout_margin="16dp"
+        android:layout_below="@id/til_email_sign_up"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_check_circle_black_24dp"/>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_below="@id/til_email_sign_up"
+        android:id="@+id/til_password_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:singleLine="true"
+        android:imeOptions="actionNext">
+        <EditText
+            android:id="@+id/edt_password_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mật khẩu"
+            android:maxLines="1"
+            android:inputType="textPassword"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/iv_check_confirm"
+        android:layout_margin="16dp"
+        android:layout_below="@id/til_password_sign_up"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_check_circle_black_24dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_below="@id/til_password_sign_up"
+        android:id="@+id/til_confim_password_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:singleLine="true"
+        android:imeOptions="actionNext">
+        <EditText
+            android:id="@+id/edt_confirm_password_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:hint="Xác nhận mật khẩu"
+            android:inputType="textPassword"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_terms"
+        android:layout_marginTop="40dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="110dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/til_confim_password_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/string"/>
+
+    <TextView
+        android:id="@+id/tv_sign_up"
+        android:gravity="center"
+        android:text="Đăng ký"
+        android:textSize="@dimen/textsizel"
+        android:textStyle="bold"
+        android:textColor="#ffff"
+        android:background="@color/colorbackgrond"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/tv_terms"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/width_login"
+        android:layout_height="@dimen/height_login"/>
+
+</RelativeLayout>

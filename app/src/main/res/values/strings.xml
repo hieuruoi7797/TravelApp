@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">TravelApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="string">Tôi chấp nhận các \"Điều khoản và điều kiện\"</string>
+    <string name="facebook_app_id">192339061334050</string>
+    <string name="chon_diem_dau_upper_case">CHỌN ĐIỂM ĐẦU</string>
+    <string name="tim_kiem_tai_day">Tìm kiếm tại đây</string>
+    <string name="chon_diem_cuoi_upper_case">CHỌN ĐIỂM CUỐI</string>
+    <string name="app_name_upper_case">WETRAVEL</string>
+    <string name="start">Bắt đầu</string>
+    <string name="google_maps_key">AIzaSyB2mWfbIi-G5ktIrj6GI3CaQo7c3-Xc4Q8</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="pass">Cuonghx2709</string>
+    <string name="mail">SupportCenterTravelApp@gmail.com</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="app_name_son_style">weTravel</string>
+    <string name="message_letsgo">Chuyến đi đã bắt đầu. Vị trí của bạn sẽ được chia sẻ với mọi người. Chúc bạn có một chuyến hành trình vui vẻ và an toàn ^^</string>
+    <string name="let_s_go">Let\'s go</string>
+    <string name="title_dialog_sos_send">SOS sẽ được gửi đi trong : </string>
+    <string name="cancel">hủy</string>
+    <string name="send_now">gửi luôn</string>
+    <string name="warning_dialog_title">WARNING!!!</string>
+    <string name="message_warning_dialog">Bạn đã cách xa leader hơn 2km. Thông báo này sẽ được gửi cho leader.</string>
+</resources>

@@ -1,0 +1,79 @@
+{
+  "project_info": {
+    "project_number": "215798559974",
+    "firebase_url": "https://wetravel-aa857.firebaseio.com",
+    "project_id": "wetravel-aa857",
+    "storage_bucket": "wetravel-aa857.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:215798559974:android:fe4711e37a3b6d78",
+        "android_client_info": {
+          "package_name": "com.example.sonng266.travelapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "215798559974-s8g5bk4oihoi9hnc66u1muqof2ruflkc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sonng266.travelapp",
+            "certificate_hash": "dd2dc1edefbf33f151c7dd173c0b573527ea3058"
+          }
+        },
+        {
+          "client_id": "215798559974-kmjgmig2jc5lc0g3qrjeaotlokitaqps.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sonng266.travelapp",
+            "certificate_hash": "ca7b9ba284a9a6470fc19f93af54133a28bd201b"
+          }
+        },
+        {
+          "client_id": "215798559974-er002npgnmdfld342lddjllnee883rn9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sonng266.travelapp",
+            "certificate_hash": "d420b07bc1f52b82df676cc77be64dcd6f496262"
+          }
+        },
+        {
+          "client_id": "215798559974-571t8nlutobtam8051a1iv1r9s12u9ce.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sonng266.travelapp",
+            "certificate_hash": "88d5dcd085873dafc3d13ac2bfbd7053db1690b1"
+          }
+        },
+        {
+          "client_id": "215798559974-kqlt39d9fg4oekdglpe0ilt6hvsjk397.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0BahfNADF1gJ2FZuuXtWmS8vuqsBXcSs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "215798559974-kqlt39d9fg4oekdglpe0ilt6hvsjk397.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

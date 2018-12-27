@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="200dp">
+    <TextView
+        android:id="@+id/tv"
+        android:textStyle="bold"
+        android:textSize="@dimen/textsizel"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hãy nhập Email của bạn"/>
+
+    <EditText
+        android:id="@+id/edt_forgotPassword_dialog"
+        android:hint="Email"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_below="@id/tv"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"/>
+
+    <LinearLayout
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_below="@id/edt_forgotPassword_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:background="@drawable/layout_bg_login"
+            android:gravity="center"
+            android:text="Gửi "
+            android:layout_weight="1"
+            android:id="@+id/tv_send"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/_8dp"/>
+        <TextView
+            android:id="@+id/tv_cancel_dialog"
+            android:gravity="center"
+            android:text="Cancel"
+            android:layout_marginLeft="@dimen/_8dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</RelativeLayout>

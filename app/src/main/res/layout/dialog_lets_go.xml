@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_250dp"
+    android:padding="@dimen/_20dp">
+
+    <com.example.sonng266.travelapp.widgets.JLabel
+        android:id="@+id/tv_title_notification"
+        style="@style/TextAppearance.AppCompat.Display1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_15dp"
+        android:gravity="center"
+        android:text="@string/app_name_son_style"
+        android:textColor="@color/colorbackgrond"
+        app:jLabelFont="@string/font_lato_regular"/>
+
+    <com.example.sonng266.travelapp.widgets.JLabel
+        android:id="@+id/tv_message"
+        style="@style/TextAppearance.AppCompat.Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title_notification"
+        android:layout_marginTop="@dimen/_10dp"
+        app:jLabelFont="@string/font_lato_regular"
+        android:text="@string/message_letsgo"/>
+
+    <com.example.sonng266.travelapp.widgets.JButton
+        android:id="@+id/bt_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_son_custom"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:jLabelFont="@string/font_lato_regular"
+        android:text="@string/let_s_go"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>

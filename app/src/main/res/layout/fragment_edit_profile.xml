@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sonng266.travelapp.fragments.account.EditProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <include
+        android:id="@+id/logo"
+        layout="@layout/logo"/>
+
+    <ImageView
+        android:src="@drawable/ic_person_black_24dp"
+        android:id="@+id/iv_profile"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/margin_login"
+        android:layout_height="@dimen/margin_login" />
+    <TextView
+        android:id="@+id/tv_username"
+        android:textStyle="bold"
+        android:text="UserName"
+        android:layout_below="@id/iv_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="@dimen/margin_login"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_below="@id/tv_username"
+        android:id="@+id/til_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:singleLine="true">
+        <EditText
+            android:id="@+id/edt_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số điện thoại"
+            android:maxLines="1" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/textolor"
+        android:layout_marginTop="@dimen/margin_login"
+        android:textSize="@dimen/textsizel"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/til_phone_number"
+        android:background="@color/colorbackgrond"
+        android:text="Tiếp tục"
+        android:layout_width="@dimen/width_login"
+        android:layout_height="@dimen/height_login" />
+
+</RelativeLayout>

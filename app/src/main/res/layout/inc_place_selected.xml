@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/bt_starting_point"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_8dp"
+        android:layout_marginStart="@dimen/_8dp"
+        android:drawableLeft="@drawable/ic_circle_outline_18dp"
+        android:drawablePadding="@dimen/_10dp"
+        android:onClick="handleFragmentClick"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@+id/bt_extra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_mid_point"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_8dp"
+        android:layout_marginStart="@dimen/_8dp"
+        android:drawableLeft="@drawable/ic_location_on_red_400_24dp"
+        android:drawablePadding="@dimen/_10dp"
+        android:onClick="handleFragmentClick"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/bt_extra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_starting_point" />
+
+    <Button
+        android:id="@+id/bt_ending_point"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_8dp"
+        android:layout_marginStart="@dimen/_8dp"
+        android:drawableLeft="@drawable/ic_location_on_red_400_24dp"
+        android:drawablePadding="@dimen/_10dp"
+        android:onClick="handleFragmentClick"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@+id/bt_extra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_mid_point" />
+
+    <ImageButton
+        android:id="@+id/bt_extra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="handleFragmentClick"
+        app:srcCompat="@drawable/ic_more_vert_black_24dp"
+        android:layout_marginRight="@dimen/_8dp"
+        tools:ignore="VectorDrawableCompat" />
+
+</android.support.constraint.ConstraintLayout>

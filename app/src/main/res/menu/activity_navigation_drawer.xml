@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:checked="true"
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_map_black_24dp"
+            android:title="Bản đồ" />
+        <item
+            android:icon="@drawable/ic_show_chart_black_24dp"
+            android:id="@+id/nav_lt"
+            android:title="Lịch trình của bạn" />
+        <item
+            android:id="@+id/nav_forum"
+            android:icon="@drawable/ic_forum_black_24dp"
+            android:title="Thảo luận nhóm" />
+        <item
+            android:id="@+id/nav_user"
+            android:icon="@drawable/ic_supervisor_account_black_24dp"
+            android:title="Thành viên"
+            />
+    </group>
+
+    <group>
+        <item android:title="Tài khoản">
+            <menu>
+                <item
+                    android:id="@+id/nav_other"
+                    android:title="Chọn chuyến đi khác"/>
+                <item
+                    android:id="@+id/out_trip"
+                    android:title="Rời chuyến đi"/>
+
+                <item
+                    android:id="@+id/nav_logout"
+                    android:title="Đăng xuất"/>
+            </menu>
+        </item>
+    </group>
+
+    <group>
+        <item android:title="Hỗ trợ">
+            <menu>
+                <item
+                    android:id="@+id/nav_help"
+                    android:title="Hướng dẫn" />
+                <item
+                    android:id="@+id/nav_share"
+                    android:title="Chia sẻ" />
+                <item
+                    android:id="@+id/nav_feedback"
+                    android:title="Gửi phản hồi"/>
+            </menu>
+        </item>
+    </group>
+
+</menu>
+

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:id="@+id/tv_tile"
+        android:layout_margin="@dimen/fab_margin"
+        android:textSize="@dimen/textsizel"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bạn có chắc muốn gửi yêu cầu tham gia chuyến đi ?"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_below="@id/tv_tile"
+        android:id="@+id/til_creator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:singleLine="true">
+        <EditText
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="cuonghx"
+            android:id="@+id/edt_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Người tạo"
+            android:maxLines="1" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_below="@id/til_creator"
+        android:id="@+id/til_name_trip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:singleLine="true">
+        <EditText
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="abcdefgh"
+            android:id="@+id/edt_name_trip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên chuyến đi"
+            android:maxLines="1" />
+    </android.support.design.widget.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/til_name_trip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="Đồng ý"
+            android:textStyle="bold"
+            android:textColor="@color/textolor"
+            android:background="@color/colorbackgrond"
+            android:layout_width="80dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_margin="@dimen/fab_margin"
+            android:gravity="center"
+            android:text="cancel"
+            android:layout_width="80dp"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sonng266.travelapp.fragments.HomeFragment">
+
+    <fragment
+        android:id="@+id/map_fragment"
+        class="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/layout_going"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:visibility="gone">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_pause_trip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/_70dp"
+            android:layout_marginRight="@dimen/_8dp"
+            android:onClick="handleFragmentClick"
+            android:src="@drawable/ic_pause_white_24dp"
+            android:visibility="gone"
+            app:backgroundTint="@color/colorAccent"
+            app:fabSize="mini" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraint_layout_detail_team"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.example.sonng266.travelapp.widgets.JLabel
+                android:id="@+id/tv_member_available"
+                android:layout_width="@dimen/_70dp"
+                android:layout_height="@dimen/_25dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="@android:color/holo_red_light"
+                android:gravity="center"
+                android:text="0/0"
+                android:textColor="@android:color/white"
+                app:jLabelFont="@string/font_lato_regular"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_members"
+                android:layout_width="@dimen/_70dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_member_available"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <ImageButton
+            android:id="@+id/ib_sos"
+            android:layout_width="@dimen/_40dp"
+            android:layout_height="@dimen/_40dp"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="@dimen/_8dp"
+            android:background="@color/transparent"
+            android:onClick="handleFragmentClick"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_sos" />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_not_going"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/abc_popup_background_mtrl_mult"
+        android:clickable="true"
+        android:focusable="true">
+
+        <include
+            android:id="@+id/address_layout"
+            layout="@layout/inc_place_selected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.example.sonng266.travelapp.widgets.JButton
+            android:id="@+id/bt_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8dp"
+            android:layout_marginEnd="@dimen/_8dp"
+            android:layout_marginStart="@dimen/_8dp"
+            android:onClick="handleFragmentClick"
+            android:text="@string/start"
+            app:jLabelFont="@string/font_lato_regular"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/address_layout" />
+
+        <!--<com.wang.avi.AVLoadingIndicatorView-->
+            <!--android:id="@+id/avi"-->
+            <!--style="@style/AVLoadingIndicatorView"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:visibility="visible"-->
+            <!--app:indicatorColor="@color/colorbackgrond"-->
+            <!--app:indicatorName="BallSpinFadeLoaderIndicator" />-->
+
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

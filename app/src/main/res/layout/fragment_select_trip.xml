@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.sonng266.travelapp.fragments.account.SelectTripFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <include layout="@layout/logo"
+        android:id="@+id/logo"/>
+
+    <ImageView
+        android:layout_marginTop="@dimen/fab_margin"
+        android:id="@+id/iv_select"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/logo"
+        android:layout_width="@dimen/margin_login"
+
+        android:layout_height="@dimen/margin_login" />
+
+    <TextView
+        android:id="@+id/tvusername_select"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/iv_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Cường hoàng"/>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_select"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_below="@id/tvusername_select"
+        android:textSize="@dimen/textsizel"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn chuyến đi của bạn"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleview_select"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_below="@id/tv_select"
+        android:layout_width="match_parent"
+        android:layout_above="@id/tv_select_other"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:layout_above="@id/tv_create_select"
+        android:gravity="center"
+        android:text="Chuyến đi khác"
+        android:textColor="@color/textolor"
+        android:textSize="@dimen/textsizel"
+        android:background="@drawable/layout_bg_login"
+        android:id="@+id/tv_select_other"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/width_login"
+        android:layout_height="@dimen/height_login" />
+
+    <TextView
+        android:layout_margin="@dimen/fab_margin"
+        android:id="@+id/tv_create_select"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tạo chuyến đi mới"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_non"
+        android:layout_above="@id/tv_select_other"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@id/tv_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bạn chưa tham gia chuyến đi nào "/>
+    <com.wang.avi.AVLoadingIndicatorView
+        android:layout_centerInParent="true"
+        android:id="@+id/avi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AVLoadingIndicatorView"
+        android:visibility="visible"
+        app:indicatorName="BallSpinFadeLoaderIndicator"
+        app:indicatorColor="@color/colorbackgrond" />
+
+
+
+</RelativeLayout>
